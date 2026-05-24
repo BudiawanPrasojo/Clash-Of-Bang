@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your Clash of BaNG commander account for early access and launch rewards.">
+  <title>Register | Clash of BaNG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Clash of <span>BaNG</span></a>
+      <button class="navbar__toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="troops.html">Troops</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-label">Commander Enrollment</p>
+        <h1>Create Your Account</h1>
+        <p>Join the global launch roster. Complete all fields to receive early access credentials and toxic gold commander insignia.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container register-layout">
+        <div class="register-wrapper cyber-panel animate-on-scroll">
+          <div id="form-body" class="form-body">
+            <form id="register-form" novalidate>
+              <div class="form-group">
+                <label for="username">Commander Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your commander name" autocomplete="username">
+                <p class="form-error" id="username-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="commander@domain.com" autocomplete="email">
+                <p class="form-error" id="email-error" role="alert"></p>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Warlord Allegiance</legend>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" id="allegiance-shadow" name="allegiance" value="shadow-court">
+                    Shadow Court
+                  </label>
+                  <label>
+                    <input type="radio" id="allegiance-abyss" name="allegiance" value="abyss-hold">
+                    Abyss Hold
+                  </label>
+                  <label>
+                    <input type="radio" id="allegiance-gold" name="allegiance" value="toxic-gold">
+                    Toxic Gold Vanguard
+                  </label>
+                </div>
+                <p class="form-error" id="allegiance-error" role="alert"></p>
+              </fieldset>
+
+              <div class="form-group">
+                <label for="commander-level">Commander Level (1-50)</label>
+                <input type="number" id="commander-level" name="commander-level" min="1" max="50" placeholder="1">
+                <p class="form-error" id="level-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="battle-oath">Battle Oath</label>
+                <textarea id="battle-oath" name="battle-oath" placeholder="Swear your oath to the Cyber Warlord legion (minimum 15 characters)"></textarea>
+                <p class="form-error" id="oath-error" role="alert"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Complete Registration</button>
+            </form>
+          </div>
+
+          <div id="form-success" class="form-success" role="status">
+            <h3>Registration Complete</h3>
+            <p>Your commander profile has been submitted. Check your email for verification and early access scheduling.</p>
+            <a href="index.html" class="btn btn--outline">Return to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Clash of BaNG Studios. All rights reserved. Powered by Next-Gen Gaming Engine.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
